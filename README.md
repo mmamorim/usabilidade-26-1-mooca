@@ -9,4 +9,4 @@
 --- 
 
 * [Aula 01](./Aula01_12FEV/) (12/02) - Apresentação da UC
-* [Aula 01](./Aula02_19FEV/) (19/02) - HTML
+* [Aula 02](./Aula02_19FEV/) (19/02) - HTML
