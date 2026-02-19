@@ -23,6 +23,7 @@ Uma **tag** é um **marcador que estrutura o conteúdo da página**.
 - **Conteúdo:** `Olá, mundo!`
 - **Tag de fechamento:** `</p>`
 
+<img src="./assets/html01.jpg" width="50%">
 
 
 As tags normalmente vêm em pares (abertura e fechamento), mas algumas são autofechadas, como:
@@ -30,6 +31,8 @@ As tags normalmente vêm em pares (abertura e fechamento), mas algumas são auto
 ~~~html
 <img src="imagem.jpg" alt="Descrição"/>
 ~~~
+
+<img src="./assets/atributos.png" width="50%">
 
 ---
 
@@ -180,6 +183,10 @@ Exemplos: `<span>`, `<a>`, `<strong>`, `<em>`
 
 * `div`: elemento Block
 * `span`: elemento Inline
+
+## Atividade
+
+* [Atividade HTML](./Atividade.md) Vamos brincar de HTML
 
 
 ### Referências:
