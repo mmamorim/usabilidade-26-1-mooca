@@ -21,8 +21,11 @@
 ### Links úteis
 
 > [Icones Iconify](https://icones.js.org/collection/all) 
+
 > [Imagens Placehold](https://placehold.co/) 
+
 > [picsum.photos](https://picsum.photos/) 
+
 > [randomuser.me](https://randomuser.me/) 
 
 <img src="https://randomuser.me/api/portraits/med/men/75.jpg" width="10%">
