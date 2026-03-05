@@ -1,0 +1,48 @@
+
+
+.btn {
+    border: 1px solid #aaaaaa;
+    padding: 3px 5px 3px 5px;
+    border-radius: 3px;
+    background-color: #dddddd;
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.btn-sucesso {
+    background-color: #004000 !important;
+    color: white !important;
+}
+
+.btn-sucesso:hover {
+    background-color: #9bc59b !important;
+}
+
+.btn-perigo {
+    background-color: #400000;
+    color: white;
+}
+
+.caixa1 {
+    border: 1px solid black;
+    margin: 10px 20px 30px 40px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 15px;
+}
+
+.caixa2 {
+    border: 1px solid red;
+}
+
+#teste {
+    border: 1px solid blue;
+}
+
+div p {
+  color: green;
+}
+
