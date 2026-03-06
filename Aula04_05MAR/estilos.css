@@ -1,0 +1,11 @@
+
+.caixaContainer {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bloco {
+    border: 1px solid black;
+    width: 400px;
+}
