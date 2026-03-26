@@ -14,4 +14,5 @@
 * [Aula 04](./Aula04_05MAR/) (26/02) - CSS - Flexbox
 * **TECHWEEK** (12/03) 
 * [Aula 05](./Aula05_19MAR/) (19/03) - Bootstrap / Tailwind CSS
+* [Aula 06](./Aula06_26MAR/) (26/03) - Introdução ao Javascript
  
