@@ -4,7 +4,7 @@
 
 #### Exercício 1
 
-Crie um programa em Java que calcule a **média USJT** de um aluno.
+Crie um programa em Javascript que calcule a **média USJT** de um aluno.
 
 O programa deve:
 
@@ -21,7 +21,7 @@ media = (nota1 * 30 + nota2 * 30 + nota3 * 40) / 100;
 
 #### Exercício 2
 
-Crie um programa em Java que calcule o **IMC (Índice de Massa Corporal)** de uma pessoa.
+Crie um programa em Javascript que calcule o **IMC (Índice de Massa Corporal)** de uma pessoa.
 
 O programa deve:
 
