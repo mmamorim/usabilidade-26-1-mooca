@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+
+    <div style="margin: 5px 5px 5px 5px">
+        Nota1: <input id="caixaNota1" type="text" />
+    </div>
+    <div style="margin: 5px 5px 5px 5px">
+        Nota2: <input id="caixaNota2" type="text" />
+    </div>
+    <div style="margin: 5px 5px 5px 5px">
+        Nota3: <input id="caixaNota3" type="text" />
+    </div>
+    <div>
+        <button onclick="calcular()">Calcular média</button>
+    </div>
+
+    <script>
+
+        function calcular() {
+            let nota1, nota2, nota3, media
+
+            //let elem = document.getElementById("caixaNota1")
+            //console.log("O que tem em elem",elem);
+            //nota1 = parseInt(elem.value)
+            //console.log("valor nota1",nota1);
+            
+            nota1 = parseInt(document.getElementById("caixaNota1").value)
+            nota2 = parseInt(document.getElementById("caixaNota2").value)
+            nota3 = parseInt(document.getElementById("caixaNota2").value)
+
+            media = (nota1 * 30 + nota2 * 30 + nota3 * 40) / 100;
+            console.log("Sua média é: ", media);
+        }
+
+    </script>
+
+
+</body>
+
+</html>
