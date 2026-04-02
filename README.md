@@ -16,6 +16,6 @@
 * [Aula 05](./Aula05_19MAR/) (19/03) - Bootstrap / Tailwind CSS
 * [Aula 06](./Aula06_26MAR/) (26/03) - Introdução ao Javascript
     - [Exercícios](./Aula06_26MAR/exercicios.md)
-* [Aula 07](./Aula07_26MAR/) (02/04) - Entrada de Dados em JavaScript
+* [Aula 07](./Aula07_02ABR/) (02/04) - Entrada de Dados em JavaScript
     - [Exercícios](./Aula06_26MAR/exercicios.md)
  
