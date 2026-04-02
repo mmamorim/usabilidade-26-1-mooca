@@ -18,7 +18,6 @@ media = (nota1 * 30 + nota2 * 30 + nota3 * 40) / 100;
 3. Exibir o valor da média na tela.
 
 
-
 #### Exercício 2
 
 Crie um programa em Javascript que calcule o **IMC (Índice de Massa Corporal)** de uma pessoa.
