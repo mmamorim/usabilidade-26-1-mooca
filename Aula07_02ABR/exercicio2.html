@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+
+    <h1>Cálduladora IMC</h1>
+
+    <div style="margin: 5px 5px 5px 5px">
+        Peso: <input id="caixaPeso" type="text" />
+    </div>
+    <div style="margin: 5px 5px 5px 5px">
+        Altura: <input id="caixaAltura" type="text" />
+    </div>
+    <div>
+        <button onclick="calcular()">Calcular IMC</button>
+    </div>
+    <div style="border: 1px solid black; padding: 8px 8px 8px 8px;">
+        Seu IMC é:
+        <span id="resposta" style="font-weight: 900;">
+            sem resposta ainda...
+        </span>
+    </div>
+
+    <script>
+
+        function calcular() {
+            let peso, altura, imc
+
+            peso = parseFloat(document.getElementById("caixaPeso").value)
+            altura = parseFloat(document.getElementById("caixaAltura").value)
+
+            imc = peso / (altura * altura)
+            console.log("Seu IMC é: ", imc);
+            let elem = document.getElementById("resposta")
+            elem.innerText = imc
+
+            if (imc < 18.5) {
+                console.log("Abaixo do peso")
+            } else {
+                if (imc < 24.9) {
+                    console.log("Peso normal (ideal)")
+                } else {
+                    if (imc < 29.9) {
+                        console.log(" Sobrepeso (pré-obesidade)")
+                    } else {
+                        console.log("outro")
+                    }
+                }
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

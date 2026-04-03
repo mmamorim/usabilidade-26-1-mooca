@@ -21,6 +21,12 @@
     <div>
         <button onclick="calcular()">Calcular média</button>
     </div>
+    <div style="border: 1px solid black; padding: 8px 8px 8px 8px;">
+        Sua média é: 
+        <span id="resposta" style="font-weight: 900;"> 
+            sem resposta ainda...
+        </span> 
+    </div>
 
     <script>
 
@@ -38,6 +44,8 @@
 
             media = (nota1 * 30 + nota2 * 30 + nota3 * 40) / 100;
             console.log("Sua média é: ", media);
+            let elem = document.getElementById("resposta")
+            elem.innerText = media
         }
 
     </script>
