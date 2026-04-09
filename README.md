@@ -5,6 +5,11 @@
 ##### link deste repositório: 
 ## https://github.com/mmamorim/usabilidade-26-1-mooca
 
+---
+
+#### 📦 Projeto A3 – Catálogo de Produtos Interativo
+
+[Enunciado Projeto A3 (versão Alfa)](./projetoA3.md)
 
 --- 
 
