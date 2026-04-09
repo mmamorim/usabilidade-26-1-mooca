@@ -15,7 +15,7 @@
         Salário: <input id="caixaSalario" type="text" />
     </div>
     <div>
-        <button onclick="calcular()">Calcular IMC</button>
+        <button onclick="calcular()">Calcular Reajuste</button>
     </div>
     <div style="border: 1px solid black; padding: 8px 8px 8px 8px;">
         Seu Salário reajustado é:
@@ -27,6 +27,23 @@
     <script>
 
         function calcular() {
+
+            let elem = document.getElementById("caixaSalario")
+            // console.log("Elem: ",elem);
+            let salario = parseFloat(elem.value)
+
+            if(salario < 2000) {
+                salario = salario * 1.5
+            }
+            if(salario >= 2000 && salario < 5000) {
+                salario = salario * 1.2
+            }
+            if(salario >= 5000) {
+                salario = salario * 1.1
+            }
+
+            console.log("Seu novo Salário é ",salario)
+
 
 
         }
