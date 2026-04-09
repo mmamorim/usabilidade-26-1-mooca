@@ -18,4 +18,6 @@
     - [Exercícios](./Aula06_26MAR/exercicios.md)
 * [Aula 07](./Aula07_02ABR/) (02/04) - Entrada de Dados em JavaScript
     - [Exercícios](./Aula06_26MAR/exercicios.md)
+* [Aula 08](./Aula08_09ABR/) (09/04) - Desvios Condicionais
+    - [Exercícios](./Aula08_09ABR/exercicios.md)
  
