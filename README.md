@@ -25,4 +25,4 @@
     - [Exercícios](./Aula06_26MAR/exercicios.md)
 * [Aula 08](./Aula08_09ABR/) (09/04) - Desvios Condicionais
     - [Exercícios](./Aula08_09ABR/exercicios.md)
- 
+* [Aula 09](./Aula09_16ABR/) (16/04) - Laços de Repetição e Objetos
