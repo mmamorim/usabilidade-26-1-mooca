@@ -10,7 +10,7 @@ let template = Handlebars.compile(source);
 let dados = {
     nome: "Bia",
     saudacao: "Boa tarde!",
-    frutas: [ "🍉", "🍇", "Ana", "Bia" ]
+    frutas: ["🍉", "🍇", "Ana", "Bia"]
 };
 
 let saida = template(dados);
@@ -23,9 +23,9 @@ let tplTrecho = Handlebars.compile(`
             <div>{{this.nome}} tem {{this.idade}} anos</div>
         {{/each}}
 `)
-let dados2 = { 
+let dados2 = {
     titulo: "Lista de pessoas",
-    pessoas: [ 
+    pessoas: [
         { nome: "Ana", idade: 18 },
         { nome: "Bia", idade: 23 },
         { nome: "João", idade: 28 },
@@ -33,16 +33,16 @@ let dados2 = {
 }
 elem.innerHTML = tplTrecho(dados2)
 
-let listaFrutas = [
-    { avatar: "🍉", nome: "Melancia", cor: "vermelha" },
-    { avatar: "🍇", nome: "Uva", cor: "roxa" },
-    { avatar: "🍇", nome: "Uva2", cor: "roxa" },
-    { avatar: "🍇", nome: "Uva3", cor: "roxa" },
-]
-
-for (let i in listaFrutas) {
-    insereLinha(listaFrutas[i])
+let listaFrutas = {
+    frutas: [
+        { avatar: "🍉", nome: "Melancia", cor: "vermelha" },
+        { avatar: "🍇", nome: "Uva", cor: "roxa" },
+        { avatar: "🍇", nome: "Uva2", cor: "roxa" },
+        { avatar: "🍇", nome: "Uva3", cor: "roxa" },
+    ]
 }
+
+renderizarFrutas()
 
 function acaoAdicionar() {
     let avatar = document.getElementById("avatar").value
@@ -54,21 +54,26 @@ function acaoAdicionar() {
     fruta.nome = nome
     fruta.cor = cor
     console.log(fruta)
-    insereLinha(fruta)
-    //console.log("Avatar", avatar)
-    //console.log("Nome", nome)
-    //console.log("Cor", cor)
-
+    listaFrutas.frutas.push(fruta)
+    renderizarFrutas()
 }
 
-function insereLinha(fruta) {
+function renderizarFrutas() {
     let elem = document.getElementById("lista")
     let htmlString = `
         <tr>
-            <td>`+ fruta.avatar + `</td>
-            <td>`+ fruta.nome + `</td>
-            <td>`+ fruta.cor + `</td>
-        </tr>    
+            <td>Avatar</td>
+            <td>Nome</td>
+            <td>Cor</td>
+        </tr>
+        {{#each frutas}} 
+            <tr>
+                <td>{{this.avatar}}</td>
+                <td>{{this.nome}}</td>
+                <td>{{this.cor}}</td>
+            </tr>    
+        {{/each}}
     `
-    elem.insertAdjacentHTML('beforeend', htmlString)
+    let tplTrecho = Handlebars.compile(htmlString)
+    elem.innerHTML = tplTrecho(listaFrutas)
 }
