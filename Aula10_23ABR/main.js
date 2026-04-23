@@ -2,15 +2,20 @@
 console.log("oi gente")
 
 //let source = document.getElementById("meu-template").innerHTML;
-let source = "oi {{nome}} ... {{saudacao}}! Tudo bem com vc?"
+let source = `
+    {{#each frutas}} 
+        oi {{this}} ... {{saudacao}}! Tudo bem com vc?  
+    {{/each}}`
+
 let template = Handlebars.compile(source);
 let dados = {
-    nome: "Ana",
-    saudacao: "Bom dia!"
+    nome: "Bia",
+    saudacao: "Boa tarde!",
+    frutas: [ "🍉", "🍇", "Ana", "Bia" ]
 };
 
-let html = template(dados);
-console.log(html);
+let saida = template(dados);
+console.log(saida);
 
 let listaFrutas = [
     { avatar: "🍉", nome: "Melancia", cor: "vermelha" },
