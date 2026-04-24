@@ -1,6 +1,17 @@
 
 console.log("oi gente")
 
+let elemSpan = document.getElementById("contador")
+let valor = localStorage.getItem("contador")
+elemSpan.innerText = valor
+
+function incrementar() {
+    valor++
+    localStorage.setItem("contador", valor);
+    let elemSpan = document.getElementById("contador")
+    elemSpan.innerText = valor
+}
+
 let source = `
     {{#each frutas}} 
         oi {{this}} ... {{saudacao}}! Tudo bem com vc?  
@@ -34,12 +45,11 @@ let dados2 = {
 elem.innerHTML = tplTrecho(dados2)
 
 let listaFrutas = {
-    frutas: [
-        { avatar: "🍉", nome: "Melancia", cor: "vermelha" },
-        { avatar: "🍇", nome: "Uva", cor: "roxa" },
-        { avatar: "🍇", nome: "Uva2", cor: "roxa" },
-        { avatar: "🍇", nome: "Uva3", cor: "roxa" },
-    ]
+    frutas: []
+}
+let listaFrutasSalvo = localStorage.getItem("listaFrutas")
+if(listaFrutasSalvo != null) {
+    listaFrutas = JSON.parse(listaFrutasSalvo)
 }
 
 renderizarFrutas()
@@ -55,6 +65,7 @@ function acaoAdicionar() {
     fruta.cor = cor
     console.log(fruta)
     listaFrutas.frutas.push(fruta)
+    localStorage.setItem("listaFrutas",JSON.stringify(listaFrutas))
     renderizarFrutas()
 }
 
