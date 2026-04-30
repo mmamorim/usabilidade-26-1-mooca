@@ -28,3 +28,4 @@
 * [Aula 09](./Aula09_16ABR/) (16/04) - Laços de Repetição e Objetos
 * [Aula 10](./Aula10_23ABR/) (23/04) - Persistência de dados com localStorage
     * [Template Engine no Frontend com Handlebars.js](./Aula10_23ABR/handlebars.md)
+* [Aula 11](./Aula11_30ABR/) (30/04) - Requisições HTTP
