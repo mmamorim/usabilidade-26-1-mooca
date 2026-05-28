@@ -13,6 +13,22 @@
 
 [Formulário para informar integrantes dos grupos - Projeto A3](https://forms.gle/AZtkhuB8z5iProjv9)
 
+---
+
+# ORIENTAÇÕES - ENTREGA PROJETO A3: 
+
+[FORMULÁRIO DE ENTREGA](https://forms.gle/gjjpzuHuETUtvVUR7)
+
+1. Preencher o formulário de entrega com:
+    * Informações dos integrantes do grupo: **RA** e **NOME COMPLETO** (importante)
+    * Informar o link do github do repositório com a implementação do projeto
+2. O repositório do github deverá conter todos os arquivos de código do projeto e um arquivo ```readme.md```.       
+    * IMPORTANTE: **Informar todos os integrantes do grupo (RA e NOME COMPLETO) no `readme.md`**.  
+3. O Projeto poderá ser realizado em grupo de até 5 integrantes.
+4. A entrega deverá ser feita por apenas um integrante do grupo.
+
+> QUE A FORÇA DO JAVASCRIPT ESTEJA COM TODOS!
+
 --- 
 
 * [Aula 01](./Aula01_12FEV/) (12/02) - Apresentação da UC
@@ -31,3 +47,7 @@
 * [Aula 10](./Aula10_23ABR/) (23/04) - Persistência de dados com localStorage
     * [Template Engine no Frontend com Handlebars.js](./Aula10_23ABR/handlebars.md)
 * [Aula 11](./Aula11_30ABR/) (30/04) - Requisições HTTP
+* **SEMANA ENGENHARIA** (07/05) 
+* **AULA 12 - SEM ALUNOS** (14/05) 
+* [Aula 13](./Aula13_21MAI/) (21/05) - Requisições HTTP
+* [Aula 14](./Aula14_28MAI/) (28/05) - Exemplo modelo para projeto A3
